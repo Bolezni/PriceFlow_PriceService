@@ -2,6 +2,7 @@ package com.bolezni.priceflow_priceservice.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -47,7 +48,8 @@ public class Product {
     private String mpn;
 
     // Дата создания
-    private LocalDateTime createdAt = LocalDateTime.now();
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 
 
 }
