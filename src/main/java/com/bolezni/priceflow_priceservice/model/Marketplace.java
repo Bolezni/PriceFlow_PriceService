@@ -1,2 +1,4 @@
-package com.bolezni.priceflow_priceservice.model;public enum Martketplace {
+package com.bolezni.priceflow_priceservice.model;
+
+public enum Marketplace {
 }
